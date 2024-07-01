@@ -1,0 +1,29 @@
+.messages__item {
+  width: 92.8%;
+  margin-bottom: 8px;
+  padding: 25px 35px 32px 23px;
+  background-color: #f4f6fc;
+  border-radius: 20px
+}
+
+.messages__item--my {
+  margin-left: auto;
+  background-color: #f2fae4
+}
+
+.messages__item-info {
+  padding-top: 3px
+}
+
+.messages__item-avatar {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin-right: 14px;
+  background-color: #e2e8f7;
+  background-image: url(../../../assets/img/icon-input-user.svg);
+  border-radius: 50%;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center
+}

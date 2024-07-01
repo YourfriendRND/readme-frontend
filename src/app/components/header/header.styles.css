@@ -1,0 +1,17 @@
+.header__nav-wrapper-main-page {
+  display: block;
+  width: 100%;
+}
+
+.header__nav-wrapper-main-page--disable {
+  display: none;
+}
+
+.header__nav-wrapper-content-page {
+  display: block;
+  width: 100%;
+}
+
+.header__nav-wrapper-content-page--disable {
+  display: none;
+}

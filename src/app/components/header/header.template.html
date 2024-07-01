@@ -1,0 +1,21 @@
+<header class="header" [class.page__header]="isMainPage">
+  <div class="header__wrapper page__header-wrapper container">
+    <div class="header__logo-wrapper page__logo-wrapper">
+      <a class="header__logo-link header__logo-link--active">
+        <img class="header__logo" src="./assets/img/logo.svg" alt="Логотип readme" width="172" height="32">
+      </a>
+      <p class="header__topic page__header-topic">
+        micro blogging
+      </p>
+    </div>
+    <header-search [isDisabled]="isMainPage"></header-search>
+    <div class="header__nav-wrapper">
+      <div #mainNavbar [class.header__nav-wrapper-main-page]="isMainPage" [class.header__nav-wrapper-main-page--disable]="!isMainPage">
+        <main-navbar></main-navbar>
+      </div>
+      <div #contentNavbar [class.header__nav-wrapper-content-page]="!isMainPage" [class.header__nav-wrapper-content-page--disable]="isMainPage">
+        <content-navbar></content-navbar>
+      </div>
+    </div>
+  </div>
+</header>

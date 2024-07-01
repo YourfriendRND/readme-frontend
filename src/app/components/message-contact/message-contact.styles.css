@@ -1,0 +1,26 @@
+.messages__contacts-item {
+  margin-bottom: 7px
+}
+
+.messages__contacts-item--new
+.messages__preview-text {
+  color: #2e384d
+}
+
+.messages__contacts-item--new
+.messages__preview-time {
+  color: #2e384d;
+  opacity: 1
+}
+
+.messages__contacts-item--new
+.messages__contacts-tab--active
+.messages__preview-text {
+  opacity: 1
+}
+
+.messages__contacts-item--new
+.messages__contacts-tab--active
+.messages__preview-time {
+  opacity: 1
+}
