@@ -1,33 +1,8 @@
 <form class="login__form form" action="#" method="post" (submit)="submitForm($event)">
-  <div class="login__input-wrapper form__input-wrapper">
-    <label class="login__label form__label" for="login-email">Электронная почта</label>
-    <div class="form__input-section">
-      <input
-        #email
-        (input)="inputEmail(email.value)"
-        class="login__input form__input"
-        id="login-email"
-        type="email"
-        name="email"
-        placeholder="Укажите эл.почту"
-      >
-      <form-error></form-error>
-    </div>
-  </div>
-  <div class="login__input-wrapper form__input-wrapper">
-    <label class="login__label form__label" for="login-password">Пароль</label>
-    <div class="form__input-section">
-      <input
-        (input)="inputPassword(password.value)"
-        #password
-        class="login__input form__input"
-        id="login-password"
-        type="password"
-        name="password"
-        placeholder="Введите пароль"
-      >
-      <form-error></form-error>
-    </div>
-  </div>
+  <form-input
+    *ngFor="let field of loginFields"
+    [field]="field"
+  >
+  </form-input>
   <button class="login__submit button button--main" type="submit" >Отправить</button>
 </form>

@@ -1,9 +1,8 @@
-<body class="page page--main">
-  <!-- <app-main-page></app-main-page> -->
-  <sign-up-page></sign-up-page>
-  <!-- <sign-in-page></sign-in-page> -->
-  <!-- <profile-page></profile-page> -->
-  <!-- <feed-page></feed-page> -->
-  <!-- <messages-page></messages-page> -->
-
+<body class="page" [class.page--main]="activePage === pages.Main">
+  <app-main-page *ngIf="activePage === pages.Main"></app-main-page>
+  <sign-up-page *ngIf="activePage === pages.SignUp"></sign-up-page>
+  <sign-in-page *ngIf="activePage === pages.SignIn"></sign-in-page>
+  <profile-page *ngIf="activePage === pages.Profile"></profile-page>
+  <feed-page *ngIf="activePage === pages.Feed"></feed-page>
+  <messages-page *ngIf="activePage === pages.Messages"></messages-page>
 </body>
